@@ -1,0 +1,275 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Noto Serif', serif;
+    --ff-secondary: 'Roboto Flex', sans-serif;
+
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 1),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+.logohead{
+    color: rgb(241, 25, 25);
+}
+span{
+    color: blue;
+}
+
+/* general styles*/
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    font-size: var(--fs-body);
+    font-family: var(--ff-primary);
+    line-height: 1.6;
+}
+
+section {
+    padding: 3em 1em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    margin: 0px;
+
+}
+
+h1 {
+    font-size: var(--fs-h1)
+}
+
+h2 {
+    font-size: var(--fs-h2)
+}
+
+h3 {
+    font-size: var(--fs-h3)
+}
+
+.section__title {
+    margin-bottom: .25rem;
+    font-size: var(--fs-h1);
+    width: 100%;
+    position: relative;
+    left: 40rem;
+    top: 15rem;
+
+
+}
+
+.section__tile--into {
+    font-weight: lighter;
+
+}
+
+strong {
+    display: block;
+    font-weight: 900;
+}
+
+.section__subtitle {
+
+    font-size: 1.5em;
+    padding: 1em;
+
+}
+
+
+.section__subtitle--intro{
+
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+
+    width: 90%;
+    position: relative;
+
+    top: 15em;
+    text-align: right;
+    padding: .175em 18rem;
+    margin: -15px;
+    z-index: -2;
+}
+.section__subtitle--about {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+
+    width: 100%;
+    position: relative;
+
+    top: 14em;
+    text-align: left;
+    padding: .175em 3rem;
+    margin: -15px;
+    z-index: -2;
+}
+
+.intro {
+    position: relative;
+    margin-top: -11%;
+  
+    
+}
+
+.introimage {
+    box-shadow: var(--bs);
+    padding: 1px;
+    margin-left: 3%;
+
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 10px;
+    margin:3em ;
+
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* styling my services*/
+.myservices {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    background-image: url(images/fire.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.services {
+    max-width: 1100px;
+    margin:0% 10%;
+    display: flex;
+    gap: 5em;
+    font-size: 1.3rem;
+
+}
+.service h3{
+    font-size: 1.5rem;
+}
+
+
+
+.aboutmeimg{
+   position: relative;
+   left:35em;
+   bottom:15em;
+   margin-top: 2em;
+  
+}
+.aboutme__body{
+    font-size: 1.5rem;
+    width:100%;
+    
+}
+
+.section__title--services {
+    color: var(--clr-accent);
+    position: relative;
+    font-size: 3rem;
+    
+}
+.section__tile--about{
+    position: relative;
+    left:12em;
+}
+
+.section__title--services::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 2px;
+    margin: 0.5em auto 1em;
+    background: #16e0bd;
+
+}
+
+
+.portfolio{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(108, 106, 106);
+    margin :1em;
+    padding: 2rem;
+   
+}
+
+.section__subtitle--work{
+    text-align: center;
+    font-size: var(--fs-h3);
+    color: rgb(2, 1, 1);
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+}
+.my-work{
+    margin-top: -27%;
+}
+.workhead{
+    text-align: center;
+}
+.socialmedia{
+    display: flex;
+    background-color: #0433c0;
+    width: 100%;
+    height:160px;
+    justify-content: center;
+}
+.socialmedia a{
+    width: 95px;
+    height: 95px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f9004d;
+    margin: 22px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+footer p{
+
+
+    font-size:1.7rem;
+    color:rgb(178, 16, 227);
+    margin-bottom:22px;
+    text-align: center;
+    line-height: 23px;
+}
